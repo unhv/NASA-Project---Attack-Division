@@ -5,11 +5,12 @@ RUN apt install -y git \
 		python3 \
 		pip \
 		iproute2 \
-		nano
+		net-tools \
+		iputils-ping \
+		nano 
 
 RUN mkdir mission_control
 RUN git clone https://gitlab.com/librecube/lib/python-cfdp.git /mission_control/ 
 RUN cd mission_control
 RUN pip install cfdp
 CMD ["python3", "/mission_control/examples/udp_transport/server.py"]
-
