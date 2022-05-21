@@ -11,14 +11,16 @@ logging.basicConfig(level=logging.DEBUG)
 
 config = cfdp.Config(
     local_entity=cfdp.LocalEntity(
+        # replace 127.0.0.1 with your machines IP address 
         2, "127.0.0.1:5552"),
     remote_entities=[cfdp.RemoteEntity(
+        # replace 127.0.0.1 with the servers IP address 
         1, "127.0.0.1:5551")],
     filestore=NativeFileStore("../files/client"),
     transport=UdpTransport())
 
 cfdp_entity = cfdp.CfdpEntity(config)
-
+# code looped below to continue sending messages to the server
 try:
     While True:
        transaction_id = cfdp_entity.put(
