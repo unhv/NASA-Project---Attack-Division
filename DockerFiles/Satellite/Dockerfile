@@ -5,10 +5,11 @@ RUN apt install -y git \
 		python3 \
 		pip \
 		iproute2 \
-		nano
+                net-tools \
+		iputils-ping \
+		nano 
 
 RUN mkdir satellite
 RUN git clone https://gitlab.com/librecube/lib/python-cfdp.git /satellite/
 RUN cd satellite
 RUN pip install cfdp
-
