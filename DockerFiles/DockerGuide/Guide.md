@@ -36,7 +36,7 @@ On one terminal this will be where the server is you can run the command
 
 “Docker run -it -h “missioncontrol” mission_control:Dockerfile” 
 
-![alt text](https://imgur.com/S9EEhir)
+![Imgur](https://imgur.com/S9EEhir.png)
 
 This will create a container with our python-cfdp server running already. If you want to change the server configuration it is recommended to add the flag “bash” to the end of the command like so
 “Docker run -it mission_control:Dockerfile bash”
