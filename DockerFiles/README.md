@@ -1,8 +1,5 @@
 # Creating Satellite and Mission Control devices
 
-
-Firstly, if you are unfamiliar with docker please follow either Daniel and Saatviks guide on installing it or simply visit the website and follow the guide (installing docker on ubuntu) here. I will still provide a quick summary as installing docker is very simple
-
 ## Installing Docker
 Run the following command to ensure you do not have docker on your system and if you do remove it, as we will be installing the latest version (copy paste the code in quotes not including the quotes marked in red).
 
