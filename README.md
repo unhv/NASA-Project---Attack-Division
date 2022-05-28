@@ -10,7 +10,8 @@ It will be beneficial to include all of the following:
 3. Custom code used in simulating (sleeping the satellites, ground station)  
 
 # Dockerfiles added
-Any new and existing students can following the provided guide spin up a scenario within minutes on any device that supports docker.
+Any new and existing students can following the provided guide to spin up a scenario within minutes on any device that supports docker.
+There is also some tips on setting the IP Addresses which is important in making the server and client communicate.
 
 # Scripts
-There is a small loop allowing you to continuously send files to the server from the client without having to re-run the program
+There is a small change to the code which loops sending the same file which you can alter, allowing you to continuously send files to the server from the client without having to re-run the program each time. 
